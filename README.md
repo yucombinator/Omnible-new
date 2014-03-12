@@ -27,7 +27,7 @@ This app is actually a web browser that pretends to be an iPhone (by changing it
 
 At no point your information should be compromised. However, you may manually log out in Services> Disconnect.
 
-<b>This app does not store or access your student ID or password, ever. Cookies are stored but they do not contain any personal information.</b>
+<b>This app does not store or access your password, ever. Cookies are stored but they do not contain any personal information.</b>
 
 Contributing
 ===========
