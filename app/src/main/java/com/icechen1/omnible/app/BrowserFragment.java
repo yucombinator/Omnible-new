@@ -3,6 +3,7 @@ package com.icechen1.omnible.app;
 import android.app.DownloadManager;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -59,7 +60,18 @@ public class BrowserFragment extends Fragment {
         webSettings.setSupportZoom(true);
         webSettings.setDomStorageEnabled(true); //enable session storage
         wv.setWebChromeClient(new WebChromeClient());
-        wv.setWebViewClient(new WebViewClient());
+        wv.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url)
+            {
+                getActivity().setProgressBarIndeterminateVisibility(false);
+            }
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon)
+            {
+                getActivity().setProgressBarIndeterminateVisibility(true);
+            }
+        });
 
         //Handles document download events
         wv.setDownloadListener(new DownloadListener() {
@@ -67,7 +79,7 @@ public class BrowserFragment extends Fragment {
                                         String contentDisposition, String mimetype,
                                         long contentLength) {
                 //odd bugfix if omnivox sends us malformed links
-                url.replace("https%3A//", "https://");
+                url = url.replace("https%3A//", "https://");
 
                 Uri link = Uri.parse(url);
                 // Make a new download request pointing to the url
