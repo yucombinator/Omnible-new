@@ -5,7 +5,10 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.*;
+
+import java.io.File;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -75,5 +78,30 @@ public class MainActivity extends ActionBarActivity {
         // If it wasn't the Back key or there's no web page history, bubble up to the default
         // system behavior (probably exit the activity)
         return super.onKeyDown(keyCode, event);
+    }
+
+    /**
+     * Executed when app is closing
+     */
+    @Override
+    protected void onStop() {
+        super.onStop();
+        //Clear localStorage and other cached files for increased security/privacy
+        File dir = getDir("webview",0);
+        deleteFile(new File(dir, "Web Data"));
+        deleteFile(new File(dir, "Web Data-journal"));
+        deleteFile(new File(dir, "Local Storage"));
+    }
+    void deleteFile(File file){
+        //Delete all files in directory if file is a directory
+        if (file.isDirectory()) {
+            String[] children = file.list();
+            for (int i = 0; i < children.length; i++) {
+                new File(file, children[i]).delete();
+            }
+        }
+        Log.d("Omnible", file.getPath());
+        boolean deleted = file.delete();
+        Log.d("Omnible", "Deletion status: " + deleted);
     }
 }

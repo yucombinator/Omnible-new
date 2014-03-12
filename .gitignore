@@ -3,5 +3,5 @@
 /.idea/workspace.xml
 .DS_Store
 /gradle
-keystore.jks
+/app/keystore.jks
 /app/build.gradle
