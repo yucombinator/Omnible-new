@@ -8,14 +8,14 @@ import android.os.Bundle;
 import android.view.*;
 
 
-public class SelectorActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity {
 
     private BrowserFragment bf;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_selector);
+        setContentView(R.layout.activity_main);
         bf = new BrowserFragment();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
