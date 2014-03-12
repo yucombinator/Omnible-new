@@ -24,7 +24,10 @@ I am not affiliated with Skytech Communications in any way. This app is newly re
 
 <b>Privacy and behind the scenes:</b>
 This app is actually a web browser that pretends to be an iPhone (by changing its user-agent), in order to get the official mobile version of Omnivox that is currently only available for Apple devices. The app may store your session so you will be logged in automatically, and your session information may be passed on to Android's Download Manager in order to allow you to download files.
-<b>This app does not store or access your student ID or password, ever, except to login to Omnivox.</b>
+
+At no point your information should be compromised. However, you may manually log out in Services> Disconnect.
+
+<b>This app does not store or access your student ID or password, ever. Cookies are stored but they do not contain any personal information.</b>
 
 Contributing
 ===========
