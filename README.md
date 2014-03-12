@@ -3,6 +3,8 @@ Omnible-new
 
 <b>Unofficial</b> Android Application to access the Omnivox web student portal used by most CÉGEPs in Quebec, Canada. Omnivox allows students to communicate with each other, and to receive documents from teachers and from the school.
 
+Get it on the <a href="https://play.google.com/store/apps/details?id=com.icechen1.omnible.app">Play Store</a>, or via <a href="https://github.com/icechen1/Omnible-new/releases">GitHub</a>!
+
 I am not affiliated with Skytech Communications in any way. This app is newly released and may be buggy. You have been warned. Other schools and french support is upcoming. (I am open to ideas to which shchools to support next! Contact me!)
 
 <b>The app currently supports the following schools:</b>
