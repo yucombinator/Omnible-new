@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Omnible</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_change">Change School</string>
+    <string name="warning_title">Warning</string>
+    <string name="warning">This is an unofficial app to access Omnivox. We are not affiliated with Skytech Communications in any way. You have been warned.</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
