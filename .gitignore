@@ -2,3 +2,6 @@
 /local.properties
 /.idea/workspace.xml
 .DS_Store
+/gradle
+keystore.jks
+/app/build.gradle
