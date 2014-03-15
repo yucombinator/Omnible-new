@@ -33,7 +33,7 @@ public class SelectFragment extends ListFragment {
         editor.commit();
         //Redirect
         getActivity().getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new BrowserFragment())
+                .replace(R.id.container, new BrowserFragment(),"browser")
                 .commit();
     }
 }

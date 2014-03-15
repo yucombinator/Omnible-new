@@ -13,16 +13,14 @@ import java.io.File;
 
 public class MainActivity extends ActionBarActivity {
 
-    private BrowserFragment bf;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bf = new BrowserFragment();
+        BrowserFragment bf = new BrowserFragment();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, bf)
+                    .add(R.id.container, bf,"browser")
                     .commit();
         }
 
@@ -70,6 +68,8 @@ public class MainActivity extends ActionBarActivity {
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+        // Get pointer to fragment
+        BrowserFragment bf = (BrowserFragment) getSupportFragmentManager().findFragmentByTag("browser");
         // Check if the key event was the Back button and if there's history
         if ((keyCode == KeyEvent.KEYCODE_BACK) && bf.wv.canGoBack()) {
             bf.wv.goBack();

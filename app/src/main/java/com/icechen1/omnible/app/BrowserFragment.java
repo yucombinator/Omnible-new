@@ -60,18 +60,7 @@ public class BrowserFragment extends Fragment {
         webSettings.setSupportZoom(true);
         webSettings.setDomStorageEnabled(true); //enable session storage
         wv.setWebChromeClient(new WebChromeClient());
-        wv.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onPageFinished(WebView view, String url)
-            {
-                getActivity().setProgressBarIndeterminateVisibility(false);
-            }
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon)
-            {
-                getActivity().setProgressBarIndeterminateVisibility(true);
-            }
-        });
+        wv.setWebViewClient(new WebViewClient());
 
         //Handles document download events
         wv.setDownloadListener(new DownloadListener() {
