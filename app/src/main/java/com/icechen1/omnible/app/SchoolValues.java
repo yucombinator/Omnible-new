@@ -21,7 +21,18 @@ public class SchoolValues {
         	"Collège Gérald-Godin",
 			"Champlain College Lennoxville",
 			"Collège Ahuntsic",
-			"Collège André-Grasset"};
+			"Collège André-Grasset",
+			"Cégep de Drummondville",
+			"Collège LaSalle",
+			"Cégep régional de Lanaudière à Terrebonne",
+			"Cégep de Saint-Jérôme",
+			"Cégep de Sept-Îles",
+			"Cégep de l'Abitibi-Témiscamingue",
+			"Cégep Limoilou",
+			"Cégep de Sainte-Foy",
+			"Collège de Valleyfield",
+			"Collège Laflèche",
+			"Cégep de Trois-Rivières"};
     final static String[] urls = new String[] {
             "https://marianopolis.omnivox.ca/Mobl/",
             "https://vaniercollege.omnivox.ca/Mobl/",
@@ -39,5 +50,16 @@ public class SchoolValues {
         	"https://cgodin.omnivox.ca/Mobl/",
 			"https://champlaincollege-lennoxville.omnivox.ca/Mobl/",
 			"https://collegeahuntsic.omnivox.ca/Mobl/‎",
-			"https://grasset.omnivox.ca/Mobl/"};
+			"https://grasset.omnivox.ca/Mobl/",
+			"https://cdrummond.omnivox.ca/‎Mobl/",
+			"https://collegelasalle.omnivox.ca/Mobl/",
+			"https://collanaud-terrebonne.omnivox.ca/‎Mobl/",
+			"https://cstj.omnivox.ca/‎Mobl/",
+			"https://cegep-sept-iles.omnivox.ca/‎Mobl/",
+			"https://cegepat.omnivox.ca/‎Mobl/",
+			"https://climoilou.omnivox.ca/‎Mobl/",
+			"https://cegep-ste-foy.omnivox.ca/‎Mobl/",
+			"https://colval.omnivox.ca/‎Mobl/",
+			"https://clafleche.omnivox.ca/‎Mobl/",
+			"https://cegeptr.omnivox.ca/Mobl/"};
 }
